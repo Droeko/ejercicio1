@@ -11,7 +11,7 @@ import java.util.Map;
 
 /**
  *
- * @author alumno
+ * @author Droeko
  */
 public class JavaApplication1 {
 
@@ -28,7 +28,7 @@ public class JavaApplication1 {
         mapPersonas.put("00000000A", new Persona("00000000A", "PL", "Man", Sexo.HOMBRE));
         mapPersonas.put("00001101A", new Persona("00001101A", "PM", "Man", Sexo.HOMBRE));
         mapPersonas.put("12345678J", new Persona("12345678J", "PN", "Man", Sexo.HOMBRE));
-        
+
 
 //        for (Persona persona:personas){
 //            if(persona.getDNI().equals("12345678J")){
@@ -43,18 +43,17 @@ public class JavaApplication1 {
 //            System.out.println(mapPersonas.get("12345678J").getNombreCompleto());
 //            System.out.println("Nº de elementos: "+mapPersonas.size());
 
-        
-        
+
+
         //set<String> dnis=mapPeersonas.get("12345678J");
-        
-              for (String dni : mapPersonas.keySet()){
-                  System.out.println(mapPersonas.get(dni).getNombreCompleto());
-              }
+
+        for (String dni : mapPersonas.keySet()) {
+            System.out.println(mapPersonas.get(dni).getNombreCompleto());
+        }
 
 //        Persona persona = new Persona("Paco","Man",Sexo.HOMBRE);
 //        String nombre = persona.getNombreCompleto();             
 //        System.out.println(nombre);
-
 
     }
 }
